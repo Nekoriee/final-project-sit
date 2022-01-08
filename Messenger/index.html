@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мессенджер - PortalCat</title>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+</head>
+<body>
+
+<div class="navbar">
+</div>
+<script src="/dist/main.js"></script>
+
+<div class="mes-main">
+    <div class="mes-contacts">
+        <a href="/Messenger" class="mes-contacts-button"><b>Я</b></a>
+        <a href="/Messenger/Messenger2.html" class="mes-contacts-button"><b>И ещё я</b></a>
+    </div>
+
+    <div class="mes-main-chat">
+
+        <div class="mes-messages">
+            <div class="mes-message-row"><p><span class="mes-message" id="rec">Привет!</span></p></div>
+        </div>
+
+        <div class="mes-send-area">
+            <textarea class="mes-textarea" placeholder="Введите сообщение..."></textarea>
+            <button class="mes-send" onclick="AddMessage()">Отправить</button>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script src="/src/scripts/Messenger.js"></script>
+</body>
+</html>

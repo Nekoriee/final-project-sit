@@ -1,0 +1,249 @@
+p, caption, address, th {
+    color: #d9bdcb;
+    font-size: large;
+}
+
+a {
+    color: #a86991;
+}
+
+.navbar {
+    background-color: #503d4e;
+    margin-bottom: 15px;
+}
+
+.navbar a {
+    font-size: large;
+}
+
+.navbar-dropdown-button {
+    text-align: center;
+    color: #d9bdcb;
+    text-decoration: none;
+    width: 150px;
+    padding: 20px 0px;
+    display: inline-block;
+    background-color: #644c61;
+}
+
+.navbar-dropdown-button:hover {
+    color: #d9bdcb;
+    background-color: #950051;
+}
+
+.navbar-dropdown-projects, .navbar-dropdown-links {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-dropdown-projects-content, .navbar-dropdown-links-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.navbar-dropdown-projects-content a, .navbar-dropdown-links-content a {
+    text-align: center;
+    color: #d9bdcb;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    background-color: #644c61;
+}
+
+.navbar-dropdown-projects-content a:hover, .navbar-dropdown-links-content a:hover {
+    color: #d9bdcb;
+    background-color: #950051;
+}
+
+.navbar-dropdown-projects:hover .navbar-dropdown-projects-content {
+    display: block;
+}
+
+.navbar-dropdown-links:hover .navbar-dropdown-links-content {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+.content-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-avatar {
+    float: left;
+    margin-right: 15px;
+    margin-left: 10px;
+    border-color: #950051;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.text-main   {
+    text-align: justify;
+}
+body {
+    background-image: url("/src/images/orange_lines_pattern.png");
+}
+table, th, td {
+    border: 2px solid #950051;
+    background-color: #503d4e;
+}
+table {
+    float: right;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+th, td {
+    padding: 5px;
+}
+address {
+    position: fixed;
+    bottom: 0%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.audio-area {
+    margin-top: 25px;
+}
+
+.audio-area .audio, .audio-area .video {
+    margin-top: 50px;
+}
+
+.mes-contacts {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 15%;
+    float:left;
+    vertical-align: center;
+    overflow: hidden;
+}
+
+.mes-messages {
+    background-color: #503d4e;
+    padding: 15px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.mes-main-chat {
+    width: 75%;
+    height: 50%;
+    float: right;
+    margin-right: 2%;
+}
+
+.mes-send-area {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.mes-message {
+    display: inline-block;
+    background-color: #644c61;
+    padding: 5px;
+}
+
+.mes-message-row {
+    padding-top: 2px;
+    clear: both;
+}
+
+#sen.mes-message {
+    margin-left: 2%;
+    clear: left;
+}
+
+#rec.mes-message {
+    float: right;
+    margin-right: 2%
+}
+
+textarea {
+    width: 100%;
+    height: 50%;
+    resize: none;
+    overflow: auto;
+}
+
+.mes-contacts a {
+    font-size: large;
+}
+
+.mes-contacts-button {
+    margin-top:5px;
+    text-align: left;
+    color: #d9bdcb;
+    text-decoration: none;
+    width: 150px;
+    padding: 20px 20px;
+    display: inline-block;
+    background-color: #644c61;
+}
+
+.mes-contacts-button:hover {
+    color: #d9bdcb;
+    background-color: #950051;
+}
+
+.countdown-timer {
+    font-size: 36pt;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.countdown-buttons {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.countdown-button {
+    background-color: #644c61;
+    color: #d9bdcb;
+    text-align: center;
+}
+
+.countdown-button:hover {
+    background-color: #950051;
+    color: #d9bdcb;
+}
+
+.countdown-button:disabled {
+    background-color: #503d4e;
+    color: #70686c;
+}
+
+#startCountdown, #stopCountdown {
+    display: block;
+    margin: auto auto;
+    margin-top: 25px;
+}
+
+#hr\+, #hr\-, #sec\+, #sec\-, #min\+, #min\- {
+    width: 25px;
+}
+
+#hr\+, #hr\- {
+    margin-right: 32px;
+}
+
+#sec\+, #sec\- {
+    margin-left: 32px;
+}
+
+#GameWindow {
+    outline: solid 10px #950051;
+    display: block;
+    margin: 2.5% auto;
+}
+

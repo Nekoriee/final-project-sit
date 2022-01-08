@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown - PortalCat</title>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+</head>
+<body>
+
+<div class="navbar">
+</div>
+<script src="/dist/main.js"></script>
+
+<div class="countdown-buttons">
+    <button class="countdown-button" id="hr+" onclick="addTimeUpdate(3600)">+</button>
+    <button class="countdown-button" id="min+" onclick="addTimeUpdate(60)">+</button>
+    <button class="countdown-button" id="sec+" onclick="addTimeUpdate(1)">+</button>
+</div>
+
+<p class="countdown-timer">00:00:00</p>
+
+<div class="countdown-buttons">
+    <button class="countdown-button" id="hr-" onclick="addTimeUpdate(-3600)">-</button>
+    <button class="countdown-button" id="min-" onclick="addTimeUpdate(-60)">-</button>
+    <button class="countdown-button" id="sec-" onclick="addTimeUpdate(-1)">-</button>
+</div>
+
+<button class="countdown-button" id="startCountdown" onclick="startCountdown()">Начать отсчёт</button>
+<button class="countdown-button" id="stopCountdown" onclick="stopCountdown()" disabled="true">Остановить отсчёт</button>
+
+<script src="../src/scripts/Countdown.js"></script>
+
+</body>
+</html>
