@@ -135,9 +135,6 @@ function isFinished() {
 }
 
 function redraw() {
-    if (gameState == "menu") background.src = '/src/images/Games/WhackAMole/background_menu.png';
-    else background.src = '/src/images/Games/WhackAMole/background.png';
-    background.onload = function() {
         switch (gameState) {
             case "menu":
                 context.drawImage(background, 0, 0);
@@ -189,7 +186,7 @@ function redraw() {
                     }
                 }
         }
-    };
+    ;
 }
 
 function countMoles() {
@@ -223,43 +220,50 @@ function gameLoop() {
 function startGame() {
     gameState = "game";
 
-    score = 0;
-    time = 60;
-    if (localStorage.getItem("Game_WhackAMole.HighScore") == null) localStorage.setItem("Game_WhackAMole.HighScore", "0");
+    background.src = '/src/images/Games/WhackAMole/background.png';
+    background.onload = function() {
+        score = 0;
+        time = 60;
+        if (localStorage.getItem("Game_WhackAMole.HighScore") == null) localStorage.setItem("Game_WhackAMole.HighScore", "0");
 
-    burrows = [];
+        burrows = [];
 
-    for (let i = 0; i < 3; i++) {
-        burrows.push(burrows_c = [])
-        for (let j = 0; j < 3; j++) {
-            burrows[i].push(null);
+        for (let i = 0; i < 3; i++) {
+            burrows.push(burrows_c = [])
+            for (let j = 0; j < 3; j++) {
+                burrows[i].push(null);
+            }
         }
-    }
 
-    for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 3; j++) {
-            burrows[i][j] = new Mole();
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                burrows[i][j] = new Mole();
+            }
         }
-    }
 
-    redraw();
+        redraw();
 
-    gameId = setInterval(gameLoop, 0);
-    gameTimerId = setInterval(function() {
-        time--;
-        if (time == 0) {
-            clearInterval(gameTimerId);
-            finishGame();
-        }
-        requestAnimationFrame(redraw);
-    }, 1000);
+        gameId = setInterval(gameLoop, 0);
+        gameTimerId = setInterval(function() {
+            time--;
+            if (time == 0) {
+                clearInterval(gameTimerId);
+                finishGame();
+            }
+            requestAnimationFrame(redraw);
+        }, 1000);
+    };
+
 }
 
 function startMenu() {
     gameState = "menu";
-    context.strokeStyle = "#f7d04e";
-    context.fillStyle = '#b0912b';
-    redraw();
+    background.src = '/src/images/Games/WhackAMole/background_menu.png';
+    background.onload = function() {
+        context.strokeStyle = "#f7d04e";
+        context.fillStyle = '#b0912b';
+        redraw();
+    }
 }
 canvas.onclick = function() {
 

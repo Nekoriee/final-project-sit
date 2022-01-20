@@ -64,15 +64,12 @@ function isFinished() {
 }
 
 function redraw() {
-    background.src = '/src/images/Games/PilotBrothers/background.png';
-    background.onload = function() {
-        context.drawImage(background, 0, 0);
-        for (let i = 0; i < 4; i++) {
-            for (let j = 0; j < 4; j++) {
-                switches[i][j].draw();
-            }
+    context.drawImage(background, 0, 0);
+    for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++) {
+            switches[i][j].draw();
         }
-    };
+    }
 }
 
 function drawVictory() {
