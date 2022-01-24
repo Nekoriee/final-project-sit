@@ -6,7 +6,6 @@ navbar.insertAdjacentHTML('beforeend',
     <div class="navbar-dropdown-projects">
         <a class="navbar-dropdown-button"><b>Проектики</b></a>
         <div class="navbar-dropdown-projects-content">
-            <a href="/Projects/ArtStation"><b>ArtStation</b></a>
             <a href="/Projects/Images"><b>Картиночки</b></a>
             <a href="/Projects/Audio"><b>Аудио</b></a>
         </div>

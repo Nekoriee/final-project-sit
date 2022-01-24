@@ -265,11 +265,10 @@ function startMenu() {
         redraw();
     }
 }
-canvas.onclick = function() {
 
-}
 canvas.addEventListener('click', function(event) {
-    let x = event.pageX - canvasLeft, y = event.pageY - canvasTop;
+    let canvasRect = canvas.getBoundingClientRect();
+    let x = event.clientX - canvasRect.left, y = event.clientY - canvasRect.top;
     switch (gameState) {
         case "game":
             for (let i = 0; i < 3; i++) {
@@ -300,7 +299,8 @@ canvas.addEventListener('click', function(event) {
 
 canvas.addEventListener('mousemove', function(event) {
     if (gameState == "menu") {
-        let x = event.pageX - canvasLeft, y = event.pageY - canvasTop;
+        let canvasRect = canvas.getBoundingClientRect();
+        let x = event.clientX - canvasRect.left, y = event.clientY - canvasRect.top;
         if ((x > 185 && x < 599) && (y > 337 && y < 410)) {
             menuButtons[0] = "hover"
             requestAnimationFrame(redraw);

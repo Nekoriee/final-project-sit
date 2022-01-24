@@ -9,26 +9,25 @@
 
 <div class="navbar">
 </div>
-<script src="/dist/main.js"></script>
 
 <div class="countdown-buttons">
-    <button class="countdown-button" id="hr+" onclick="addTimeUpdate(3600)">+</button>
-    <button class="countdown-button" id="min+" onclick="addTimeUpdate(60)">+</button>
-    <button class="countdown-button" id="sec+" onclick="addTimeUpdate(1)">+</button>
+    <button class="countdown-button" id="hr+">+</button>
+    <button class="countdown-button" id="min+">+</button>
+    <button class="countdown-button" id="sec+">+</button>
 </div>
 
 <p class="countdown-timer">00:00:00</p>
 
 <div class="countdown-buttons">
-    <button class="countdown-button" id="hr-" onclick="addTimeUpdate(-3600)">-</button>
-    <button class="countdown-button" id="min-" onclick="addTimeUpdate(-60)">-</button>
-    <button class="countdown-button" id="sec-" onclick="addTimeUpdate(-1)">-</button>
+    <button class="countdown-button" id="hr-">-</button>
+    <button class="countdown-button" id="min-">-</button>
+    <button class="countdown-button" id="sec-">-</button>
 </div>
 
-<button class="countdown-button" id="startCountdown" onclick="startCountdown()">Начать отсчёт</button>
-<button class="countdown-button" id="stopCountdown" onclick="stopCountdown()" disabled="true">Остановить отсчёт</button>
+<button class="countdown-button" id="startCountdown">Начать отсчёт</button>
+<button class="countdown-button" id="stopCountdown" disabled="true">Остановить отсчёт</button>
 
-<script src="../src/scripts/Countdown.js"></script>
+<script src="../src/scripts/dist/Countdown.js"></script>
 
 </body>
 </html>

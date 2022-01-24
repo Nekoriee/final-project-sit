@@ -9,23 +9,24 @@
 
 <div class="navbar">
 </div>
-<script src="/dist/main.js"></script>
 
 <div class="mes-main">
     <div class="mes-contacts">
         <a href="/Messenger" class="mes-contacts-button"><b>Я</b></a>
-        <a href="/Messenger/Messenger2.html" class="mes-contacts-button"><b>И ещё я</b></a>
+        <a href="/Messenger/Messenger2.html" class="mes-contacts-button"><b>Rounder</b></a>
     </div>
 
     <div class="mes-main-chat">
 
         <div class="mes-messages">
-            <div class="mes-message-row"><p><span class="mes-message" id="rec">Привет ещё раз!</span></p></div>
+            <div class="mes-message-row"><p><span class="mes-message" id="rec">Привет, я - Rounder!</span></p></div>
+            <div class="mes-message-row"><p><span class="mes-message" id="rec">Я могу округлить число в большую или меньшую сторону.</span></p></div>
+            <div class="mes-message-row"><p><span class="mes-message" id="rec">Просто отправь сообщение в виде: {число} {ceil, floor}</span></p></div>
         </div>
 
         <div class="mes-send-area">
             <textarea class="mes-textarea" placeholder="Введите сообщение..."></textarea>
-            <button class="mes-send" onclick="AddMessage()">Отправить</button>
+            <button class="mes-send" id="button_send">Отправить</button>
         </div>
 
     </div>
@@ -33,6 +34,6 @@
 
 </div>
 
-<script src="/src/scripts/Messenger.js"></script>
+<script src="/src/scripts/dist/Messenger_lodash.js"></script>
 </body>
 </html>

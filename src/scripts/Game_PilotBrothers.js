@@ -83,7 +83,8 @@ function drawVictory() {
 canvas.addEventListener('click', function(event) {
 
     if (!isFinished()) {
-        let x = event.pageX - canvasLeft, y = event.pageY - canvasTop;
+        let canvasRect = canvas.getBoundingClientRect();
+        let x = event.clientX - canvasRect.left, y = event.clientY - canvasRect.top;
         for (let i = 0; i < 4; i++) {
             for (let j = 0; j < 4; j++) {
                 if (x > switches[i][j].getX() && x < (switches[i][j].getX() + switchImage_0.width) &&

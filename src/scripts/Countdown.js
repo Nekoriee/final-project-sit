@@ -1,6 +1,15 @@
 let timer = 0;
 let stopped = true;
 
+let button_hrPlus = document.getElementById("hr+");
+let button_hrMinus = document.getElementById("hr-");
+let button_minPlus = document.getElementById("min+");
+let button_minMinus = document.getElementById("min-");
+let button_secPlus = document.getElementById("sec+");
+let button_secMinus = document.getElementById("sec-");
+let button_start = document.getElementById("startCountdown");
+let button_stop = document.getElementById("stopCountdown");
+
 // используется при отсчёте
 function addTime(time) {
     timer += time;
@@ -65,3 +74,36 @@ function stopCountdown() {
 
 updateText(timer);
 document.getElementById("stopCountdown").disabled = true;
+
+// добавляем EventListener кнопкам
+button_hrPlus.addEventListener("click", function() {
+    addTimeUpdate(3600);
+})
+
+button_hrMinus.addEventListener("click", function() {
+    addTimeUpdate(-3600);
+})
+
+button_minPlus.addEventListener("click", function() {
+    addTimeUpdate(60);
+})
+
+button_minMinus.addEventListener("click", function() {
+    addTimeUpdate(-60);
+})
+
+button_secPlus.addEventListener("click", function() {
+    addTimeUpdate(1);
+})
+
+button_secMinus.addEventListener("click", function() {
+    addTimeUpdate(-1);
+})
+
+button_start.addEventListener("click", function() {
+    startCountdown();
+})
+
+button_stop.addEventListener("click", function() {
+    stopCountdown();
+})
