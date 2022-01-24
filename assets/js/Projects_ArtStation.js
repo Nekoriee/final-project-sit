@@ -1,4 +1,4 @@
-let url = '/src/json/images.json';
+let url = '/assets/json/images.json';
 
 let images = document.querySelector(".as_images");
 

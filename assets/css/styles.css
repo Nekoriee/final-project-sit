@@ -87,7 +87,7 @@ a {
     text-align: justify;
 }
 body {
-    background-image: url("/src/images/orange_lines_pattern.png");
+    background-image: url("/assets/images/orange_lines_pattern.png");
 }
 table, th, td {
     border: 2px solid #950051;

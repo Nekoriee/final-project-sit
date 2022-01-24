@@ -2,11 +2,11 @@ const canvas = document.getElementById("GameWindow"),  canvasLeft = canvas.offse
     canvasTop = canvas.offsetTop + canvas.clientTop;
 const context = canvas.getContext("2d");
 const background = new Image(), switchImage_0 = new Image(), switchImage_1 = new Image();
-switchImage_0.src = '/src/images/Games/PilotBrothers/switch_0.png';
-switchImage_1.src = '/src/images/Games/PilotBrothers/switch_1.png';
+switchImage_0.src = '/assets/images/Games/PilotBrothers/switch_0.png';
+switchImage_1.src = '/assets/images/Games/PilotBrothers/switch_1.png';
 let switches = [], switches_c;
 
-background.src = '/src/images/Games/PilotBrothers/background.png';
+background.src = '/assets/images/Games/PilotBrothers/background.png';
 background.onload = function() {
     context.drawImage(background, 0, 0);
 };
@@ -74,7 +74,7 @@ function redraw() {
 
 function drawVictory() {
     let victoryBG = new Image();
-    victoryBG.src = '/src/images/Games/PilotBrothers/victory.png';
+    victoryBG.src = '/assets/images/Games/PilotBrothers/victory.png';
     victoryBG.onload = function() {
         context.drawImage(victoryBG, 0, 0);
     };
