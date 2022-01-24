@@ -5,6 +5,7 @@ module.exports = {
 	Countdown: ['/assets/js/navbar.js', '/assets/js/Countdown.js'],
 	Game_PilotBrothers: ['/assets/js/navbar.js', '/assets/js/Game_PilotBrothers.js'],
 	Game_WhackAMole: ['/assets/js/navbar.js', '/assets/js/Game_WhackAMole.js'],
+	Projects_ArtStation: ['/assets/js/navbar.js', '/assets/js/Projects_ArtStation.js'],
 	navbar: '/assets/js/navbar.js',
     },
 
