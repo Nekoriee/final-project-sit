@@ -11,6 +11,6 @@ module.exports = {
 
     output: {
 	filename: '[name].js',
-	path: __dirname + '/assets/js/dist',
+	path: __dirname + '/dist',
       },
 };
