@@ -1,9 +1,9 @@
-#About
+# About
 Многостраничное web-приложение, содержащие различную информацию о моих проектах, такую как картинки, аудио и игры.
 
 ip - 178.128.84.157
 
-#Installation
+# Installation
 1. Clone ``git clone git@github.com:Nekoriee/final-project-sit.git``
 2. Install webpack
 ``npm install --save-dev webpack``
