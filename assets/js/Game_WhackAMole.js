@@ -1,5 +1,4 @@
-const canvas = document.getElementById("GameWindow"),  canvasLeft = canvas.offsetLeft + canvas.clientLeft,
-    canvasTop = canvas.offsetTop + canvas.clientTop;
+const canvas = document.getElementById("GameWindow");
 const context = canvas.getContext("2d");
 const background = new Image();
 const sprites = new Image();

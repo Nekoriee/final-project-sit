@@ -89,25 +89,6 @@ a {
 body {
     background-image: url("/assets/images/orange_lines_pattern.png");
 }
-table, th, td {
-    border: 2px solid #950051;
-    background-color: #503d4e;
-}
-table {
-    float: right;
-    margin-top: 5px;
-    margin-left: 15px;
-    margin-right: 10px;
-}
-th, td {
-    padding: 5px;
-}
-address {
-    position: fixed;
-    bottom: 0%;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
 
 .audio-area {
     margin-top: 25px;
